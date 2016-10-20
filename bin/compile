@@ -49,9 +49,8 @@ if [ "$branch" != "" ]; then
   git checkout $branch >/dev/null 2>&1
 fi
 
-echo $BUILD_DIR
-echo $CACHE_DIR
-echo $ENV_DIR
+cd $BUILD_DIR
+ls
 
 chmod -f +x $dir/bin/{detect,compile,release}
 

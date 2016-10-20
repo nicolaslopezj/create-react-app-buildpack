@@ -49,6 +49,9 @@ if [ "$branch" != "" ]; then
   git checkout $branch >/dev/null 2>&1
 fi
 
+echo "hola mundo"
+echo $dir
+
 chmod -f +x $dir/bin/{detect,compile,release}
 
 framework=$($dir/bin/detect $1)

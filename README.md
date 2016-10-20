@@ -1,6 +1,8 @@
 Heroku Buildpack for create-react-app
 =====================================
 
+**This fork adds prerender and directory config**
+
 Deploy React.js web apps generated with [create-react-app](https://github.com/facebookincubator/create-react-app).
 
 > Automates deployment with the built-in tooling and serves it up via [Nginx](http://nginx.org/en/).

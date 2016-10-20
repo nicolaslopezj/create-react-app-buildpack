@@ -51,6 +51,7 @@ fi
 
 echo "hola mundo"
 echo $dir
+ls
 
 chmod -f +x $dir/bin/{detect,compile,release}
 

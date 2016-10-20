@@ -18,9 +18,7 @@ function indent() {
   esac
 }
 
-echo $0
-
-BUILD_DIR="$1/public"
+BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 BP_DIR=`cd $(dirname $0); cd ..; pwd`
@@ -57,7 +55,7 @@ framework=$($dir/bin/detect $1)
 
 if [ $? == 0 ]; then
   echo "=====> Detected Framework: $framework"
-  $dir/bin/compile $BUILD_DIR $CACHE_DIR $ENV_DIR
+  $dir/bin/compile $BUILD_DIR/public $CACHE_DIR $ENV_DIR
 
   if [ $? != 0 ]; then
     exit 1

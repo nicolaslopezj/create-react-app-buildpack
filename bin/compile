@@ -55,7 +55,7 @@ framework=$($dir/bin/detect $1)
 
 if [ $? == 0 ]; then
   echo "=====> Detected Framework: $framework"
-  $dir/bin/compile $BUILD_DIR/public $CACHE_DIR $ENV_DIR
+  $dir/bin/compile $BUILD_DIR $CACHE_DIR $ENV_DIR
 
   if [ $? != 0 ]; then
     exit 1

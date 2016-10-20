@@ -18,8 +18,7 @@ function indent() {
   esac
 }
 
-echo $2
-echo $3
+echo "$1/public/"
 
 BUILD_DIR="$1/public/"
 CACHE_DIR=$2

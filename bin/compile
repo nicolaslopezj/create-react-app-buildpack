@@ -18,10 +18,10 @@ function indent() {
   esac
 }
 
-echo $1
-echo `$1/public`
+echo $2
+echo $3
 
-BUILD_DIR=$1
+BUILD_DIR="$1/public"
 CACHE_DIR=$2
 ENV_DIR=$3
 BP_DIR=`cd $(dirname $0); cd ..; pwd`

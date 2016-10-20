@@ -18,10 +18,7 @@ function indent() {
   esac
 }
 
-cd $1
-ls
-cd public
-ls
+echo $0
 
 BUILD_DIR="$1/public"
 CACHE_DIR=$2
